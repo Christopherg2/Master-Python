@@ -8,8 +8,10 @@ for contador in range(1, 121):  # eL Contador se iniziliza, se crea un rango par
 
     if contador % 2 == 0:
         print(contador)
-    else:
+
+    """else:
         print(f"{contador} Es impar")
+        """
 """_
  el for recorre cada numero del rango, cada numero recorrido lo guarda en la variable
  contador, el numero se divide entre dos y si el resultado es igual igual a 0 s
