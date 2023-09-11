@@ -50,7 +50,7 @@ mostrarnombre(nombre, edad)
 # Ejemplo 3
 print(" ### EJEMPLO 3 ### ")
 
-
+"""
 def tabla(numero):
     print(f"Tabla de multiplicar del número: {numero}")
     for contador in range(11):
@@ -70,3 +70,25 @@ print(" ### EJEMPLO 3.1 ### ")
 
 for numero_tabla in range(1, 11):
     tabla(numero_tabla)
+    """
+
+# Ejemplo 4
+# Parametros opcionales
+""" Parametro opcional, se le otorga un valor por defecto
+dentro de la función
+"""
+
+print(" ---------------- ")
+print(" ### EJEMPLO 4 ### ")
+
+
+def getempleado(nombre, dni=None):
+
+    print("EMPLEADO")
+    print(f"Nombre: {nombre}")
+    print(f"DNI:{dni}")
+    if dni != None:
+        print(f"DNI: {dni}")
+
+
+getempleado("Christopher Web", 17620098)
