@@ -97,7 +97,7 @@ getempleado("Christopher Web", 17620098)
 print(" ---------------- ")
 print(" \n  # EJEMPLO 5 ### ")
 # Parametros opcionales y return o devolver datos
-
+"""
 
 def saludame(nombre):
     saludo = f"Hola, saludos {nombre}"
@@ -106,10 +106,11 @@ def saludame(nombre):
 
 
 print(saludame("Christopher G"))
+"""
 
 print(" ---------------- ")
 print(" \n### EJEMPLO 6 ### ")
-
+"""
 
 def calculadora(n1, n2, basicos=False):
 
@@ -133,3 +134,26 @@ def calculadora(n1, n2, basicos=False):
 
 
 print(calculadora(56, 5,))
+
+"""
+print(" ---------------- ")
+print(" \n### EJEMPLO 7 ### ")
+# Como usar funciones dentro de otras funciones
+
+
+def getnombre(nombre):
+    texto = f"El nombre es: {nombre}"
+    return texto
+
+
+def getapellidos(apellidos):
+    texto = f"Los apellidos son: {apellidos}"
+    return texto
+
+
+def devulvetodo(nombre, apellidos):
+    texto = getnombre(nombre) + "\n" + getapellidos(apellidos)
+    return texto
+
+
+print(devulvetodo("Christopher", "Garcia Garcia"))
