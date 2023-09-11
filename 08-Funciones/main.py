@@ -81,7 +81,7 @@ dentro de la función
 print(" ---------------- ")
 print(" ### EJEMPLO 4 ### ")
 
-
+"""
 def getempleado(nombre, dni=None):
 
     print("EMPLEADO")
@@ -92,3 +92,44 @@ def getempleado(nombre, dni=None):
 
 
 getempleado("Christopher Web", 17620098)
+"""
+
+print(" ---------------- ")
+print(" \n  # EJEMPLO 5 ### ")
+# Parametros opcionales y return o devolver datos
+
+
+def saludame(nombre):
+    saludo = f"Hola, saludos {nombre}"
+
+    return saludo
+
+
+print(saludame("Christopher G"))
+
+print(" ---------------- ")
+print(" \n### EJEMPLO 6 ### ")
+
+
+def calculadora(n1, n2, basicos=False):
+
+    suma = n1+n2
+    resta = n1-n2
+    multi = n1*n2
+    división = n1/n2
+
+    cadena = ""
+    if basicos != False:
+        cadena += "Suma: " + str(suma)
+        cadena += "\n"
+        cadena += "Resta: " + str(resta)
+        cadena += "\n"
+    else:
+        cadena += "Multiplicación: " + str(multi)
+        cadena += "\n"
+        cadena += "División: " + str(división)
+
+    return cadena
+
+
+print(calculadora(56, 5,))
