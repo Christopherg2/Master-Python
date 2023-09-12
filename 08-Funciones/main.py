@@ -136,10 +136,11 @@ def calculadora(n1, n2, basicos=False):
 print(calculadora(56, 5,))
 
 """
+
 print(" ---------------- ")
 print(" \n### EJEMPLO 7 ### ")
 # Como usar funciones dentro de otras funciones
-
+"""
 
 def getnombre(nombre):
     texto = f"El nombre es: {nombre}"
@@ -157,3 +158,16 @@ def devulvetodo(nombre, apellidos):
 
 
 print(devulvetodo("Christopher", "Garcia Garcia"))
+"""
+
+print(" ---------------- ")
+print(" \n### EJEMPLO 8 ### ")
+# Funcion lambda
+# Tareas pequeñas, operaciones, devolver dato
+# Definida en una linea
+
+
+# def dime_año(año): return f"El año es {año}"
+
+
+# print(dime_año(2023))
